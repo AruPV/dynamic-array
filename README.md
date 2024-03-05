@@ -1,16 +1,14 @@
 # LAB 4: Dynamic Arrays
+_A simple implementation of dynamic arrays written in c++20._
+***
+
+**DCS-229A**: Data Structures and Algorithms
+\
+Aru Poleo Vargas
 
 ***
 
-###DCS-229A: Data Structures and Algorithms
-###Aru Poleo Vargas
-###Prof. Barry Lawson
 
-***
-
-## WHAT
-
-A simple implementation of dynamic arrays written in c++20.
 
 ## HOW TO COMPILE
 
