@@ -1,4 +1,4 @@
-# Install script for directory: /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild
+# Install script for directory: /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

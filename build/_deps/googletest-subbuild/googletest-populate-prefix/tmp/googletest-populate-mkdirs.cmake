@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-src"
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build"
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

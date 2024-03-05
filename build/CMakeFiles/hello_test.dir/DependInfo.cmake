@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp" "CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o" "gcc" "CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o.d"
-  "/home/aru/Documents/Bates/Alg/lab4/cpp/test/hello_test.cpp" "CMakeFiles/hello_test.dir/test/hello_test.cpp.o" "gcc" "CMakeFiles/hello_test.dir/test/hello_test.cpp.o.d"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp" "CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o" "gcc" "CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o.d"
+  "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/test/hello_test.cpp" "CMakeFiles/hello_test.dir/test/hello_test.cpp.o" "gcc" "CMakeFiles/hello_test.dir/test/hello_test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

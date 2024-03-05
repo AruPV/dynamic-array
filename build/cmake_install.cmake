@@ -1,4 +1,4 @@
-# Install script for directory: /home/aru/Documents/Bates/Alg/lab4/cpp
+# Install script for directory: /home/aru/Documents/Bates/Alg/lab4/dynamic_array
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/cmake_install.cmake")
+  include("/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/aru/Documents/Bates/Alg/lab4/cpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

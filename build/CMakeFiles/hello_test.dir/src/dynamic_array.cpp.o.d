@@ -1,7 +1,7 @@
 CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o: \
- /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp \
+ /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp \
  /usr/include/stdc-predef.h \
- /home/aru/Documents/Bates/Alg/lab4/cpp/src/../incl/dynamic_array.hpp \
+ /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/../incl/dynamic_array.hpp \
  /usr/include/c++/13.2.1/cstddef \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \

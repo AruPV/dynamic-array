@@ -30,38 +30,36 @@
 class DynamicArray{
 
 	private:
-		static int resize_count;
-		static int copies;
+		static int 		resize_count;
+		static int 		copies;
+		static int 		(*resize_operation)(int);
+		static float 	resize_factor;
+		static bool		logs;
+
+		static int 		add(int);
+		static int 		mult(int);
+		static void 	resetStats();
 		
-		static std::map<std::string,int> get_stats_map();
-		static void reset_stats();
-
-		static int add(int);
-		static int mult(int);
-		static int (*resize_operation)(int);
-		static float resize_factor;
-
-		// Because of how C handles arrays, i declare ptr to first value here. The pointer here
-		// is uninitialized. It's undefined behavior if I attempt to dereference. I should also
-		// not dereference this directly, really, but instead use the syntax for 
-		// accessing array elements, the compiler then does the pointer arithmetic and dereferencing
-		// for me (yay!).
-		int* array;			
-		int next_i;
-		size_t capacity;
-		void resize();
+		int* 	array;			
+		int 	next_i;
+		size_t 	capacity;
+		void 	resize();
 
 	public:
+		static std::map<std::string,int> getStatsMap();
+		static void						 toggleLogs();
+
 		DynamicArray();
 		template<int array_length>
 		DynamicArray(std::array<int, array_length> i_array);
 		~DynamicArray();
-		int size();
-		int& operator[](size_t index);
-		int append(int new_int, bool log = false);
-		std::string toString();
-		void modify_resize();
 
+		int 		getSize();
+		int			getCapacity();
+		void 		append(int new_value);
+		int& 		operator[](size_t index);
+		std::string toString();
+		void 		modifyResize(int (*)(int), float factor = resize_factor);
 };
 
 #endif

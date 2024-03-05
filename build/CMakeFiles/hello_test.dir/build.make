@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aru/Documents/Bates/Alg/lab4/cpp
+CMAKE_SOURCE_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/cpp/build
+CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/hello_test.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/hello_test.dir/progress.make
 include CMakeFiles/hello_test.dir/flags.make
 
 CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o: CMakeFiles/hello_test.dir/flags.make
-CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o: /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp
+CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o: /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp
 CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o: CMakeFiles/hello_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o -MF CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o.d -o CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o -MF CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o.d -o CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp
 
 CMakeFiles/hello_test.dir/src/dynamic_array.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/src/dynamic_array.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp > CMakeFiles/hello_test.dir/src/dynamic_array.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp > CMakeFiles/hello_test.dir/src/dynamic_array.cpp.i
 
 CMakeFiles/hello_test.dir/src/dynamic_array.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/src/dynamic_array.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp -o CMakeFiles/hello_test.dir/src/dynamic_array.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp -o CMakeFiles/hello_test.dir/src/dynamic_array.cpp.s
 
 CMakeFiles/hello_test.dir/test/hello_test.cpp.o: CMakeFiles/hello_test.dir/flags.make
-CMakeFiles/hello_test.dir/test/hello_test.cpp.o: /home/aru/Documents/Bates/Alg/lab4/cpp/test/hello_test.cpp
+CMakeFiles/hello_test.dir/test/hello_test.cpp.o: /home/aru/Documents/Bates/Alg/lab4/dynamic_array/test/hello_test.cpp
 CMakeFiles/hello_test.dir/test/hello_test.cpp.o: CMakeFiles/hello_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello_test.dir/test/hello_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/hello_test.cpp.o -MF CMakeFiles/hello_test.dir/test/hello_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/hello_test.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/cpp/test/hello_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/hello_test.dir/test/hello_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/hello_test.dir/test/hello_test.cpp.o -MF CMakeFiles/hello_test.dir/test/hello_test.cpp.o.d -o CMakeFiles/hello_test.dir/test/hello_test.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/dynamic_array/test/hello_test.cpp
 
 CMakeFiles/hello_test.dir/test/hello_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/hello_test.dir/test/hello_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/cpp/test/hello_test.cpp > CMakeFiles/hello_test.dir/test/hello_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/dynamic_array/test/hello_test.cpp > CMakeFiles/hello_test.dir/test/hello_test.cpp.i
 
 CMakeFiles/hello_test.dir/test/hello_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/hello_test.dir/test/hello_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/cpp/test/hello_test.cpp -o CMakeFiles/hello_test.dir/test/hello_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/dynamic_array/test/hello_test.cpp -o CMakeFiles/hello_test.dir/test/hello_test.cpp.s
 
 # Object files for target hello_test
 hello_test_OBJECTS = \
@@ -111,7 +111,7 @@ bin/hello_test: CMakeFiles/hello_test.dir/build.make
 bin/hello_test: lib/libgtest_main.a
 bin/hello_test: lib/libgtest.a
 bin/hello_test: CMakeFiles/hello_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/hello_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/hello_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/hello_test.dir/clean:
 .PHONY : CMakeFiles/hello_test.dir/clean
 
 CMakeFiles/hello_test.dir/depend:
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aru/Documents/Bates/Alg/lab4/cpp /home/aru/Documents/Bates/Alg/lab4/cpp /home/aru/Documents/Bates/Alg/lab4/cpp/build /home/aru/Documents/Bates/Alg/lab4/cpp/build /home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles/hello_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aru/Documents/Bates/Alg/lab4/dynamic_array /home/aru/Documents/Bates/Alg/lab4/dynamic_array /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/hello_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/hello_test.dir/depend
 

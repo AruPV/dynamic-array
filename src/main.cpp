@@ -3,18 +3,19 @@
 #include <ranges>
 
 int main(){
-
+	
+	DynamicArray::toggleLogs();
 	DynamicArray d_a;
 	for (int i = 0; i <12; i++){
 		d_a.append(i);
 	};
 
-	for (int i = 0; i <10; i++){
-		std::cout << d_a[i] << "\n";
-	};
+	DynamicArray d_b;
+	d_b.append(1);
+
 
 	std::cout << d_a.toString();
+	std::cout << d_b.toString();
 	
-	std::cout << d_a.size();
 
 }

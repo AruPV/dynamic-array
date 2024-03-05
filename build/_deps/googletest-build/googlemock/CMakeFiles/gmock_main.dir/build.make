@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aru/Documents/Bates/Alg/lab4/cpp
+CMAKE_SOURCE_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/cpp/build
+CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build
 
 # Include any dependencies generated for this target.
 include _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend.make
@@ -72,16 +72,16 @@ include _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/flags.make
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/flags.make
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: _deps/googletest-src/googlemock/src/gmock_main.cc
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -MF CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-src/googlemock/src/gmock_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -MF CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src/googlemock/src/gmock_main.cc
 
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gmock_main.dir/src/gmock_main.cc.i"
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-src/googlemock/src/gmock_main.cc > CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src/googlemock/src/gmock_main.cc > CMakeFiles/gmock_main.dir/src/gmock_main.cc.i
 
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gmock_main.dir/src/gmock_main.cc.s"
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-src/googlemock/src/gmock_main.cc -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src/googlemock/src/gmock_main.cc -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.s
 
 # Object files for target gmock_main
 gmock_main_OBJECTS = \
@@ -93,19 +93,19 @@ gmock_main_EXTERNAL_OBJECTS =
 lib/libgmock_main.a: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 lib/libgmock_main.a: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make
 lib/libgmock_main.a: _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgmock_main.a"
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean_target.cmake
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/libgmock_main.a"
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean_target.cmake
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gmock_main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build: lib/libgmock_main.a
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
 
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean.cmake
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock && $(CMAKE_COMMAND) -P CMakeFiles/gmock_main.dir/cmake_clean.cmake
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean
 
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend:
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aru/Documents/Bates/Alg/lab4/cpp /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-src/googlemock /home/aru/Documents/Bates/Alg/lab4/cpp/build /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock /home/aru/Documents/Bates/Alg/lab4/cpp/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aru/Documents/Bates/Alg/lab4/dynamic_array /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src/googlemock /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 

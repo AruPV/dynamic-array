@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aru/Documents/Bates/Alg/lab4/cpp
+CMAKE_SOURCE_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/cpp/build
+CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DynamicArrays.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/DynamicArrays.dir/progress.make
 include CMakeFiles/DynamicArrays.dir/flags.make
 
 CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o: CMakeFiles/DynamicArrays.dir/flags.make
-CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o: /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp
+CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o: /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp
 CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o: CMakeFiles/DynamicArrays.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o -MF CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o.d -o CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o -MF CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o.d -o CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp
 
 CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp > CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp > CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.i
 
 CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/cpp/src/dynamic_array.cpp -o CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/dynamic_array.cpp -o CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.s
 
 CMakeFiles/DynamicArrays.dir/src/main.cpp.o: CMakeFiles/DynamicArrays.dir/flags.make
-CMakeFiles/DynamicArrays.dir/src/main.cpp.o: /home/aru/Documents/Bates/Alg/lab4/cpp/src/main.cpp
+CMakeFiles/DynamicArrays.dir/src/main.cpp.o: /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/main.cpp
 CMakeFiles/DynamicArrays.dir/src/main.cpp.o: CMakeFiles/DynamicArrays.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DynamicArrays.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DynamicArrays.dir/src/main.cpp.o -MF CMakeFiles/DynamicArrays.dir/src/main.cpp.o.d -o CMakeFiles/DynamicArrays.dir/src/main.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/cpp/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DynamicArrays.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DynamicArrays.dir/src/main.cpp.o -MF CMakeFiles/DynamicArrays.dir/src/main.cpp.o.d -o CMakeFiles/DynamicArrays.dir/src/main.cpp.o -c /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/main.cpp
 
 CMakeFiles/DynamicArrays.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DynamicArrays.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/cpp/src/main.cpp > CMakeFiles/DynamicArrays.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/main.cpp > CMakeFiles/DynamicArrays.dir/src/main.cpp.i
 
 CMakeFiles/DynamicArrays.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DynamicArrays.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/cpp/src/main.cpp -o CMakeFiles/DynamicArrays.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aru/Documents/Bates/Alg/lab4/dynamic_array/src/main.cpp -o CMakeFiles/DynamicArrays.dir/src/main.cpp.s
 
 # Object files for target DynamicArrays
 DynamicArrays_OBJECTS = \
@@ -109,7 +109,7 @@ bin/DynamicArrays: CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o
 bin/DynamicArrays: CMakeFiles/DynamicArrays.dir/src/main.cpp.o
 bin/DynamicArrays: CMakeFiles/DynamicArrays.dir/build.make
 bin/DynamicArrays: CMakeFiles/DynamicArrays.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/DynamicArrays"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/DynamicArrays"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DynamicArrays.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/DynamicArrays.dir/clean:
 .PHONY : CMakeFiles/DynamicArrays.dir/clean
 
 CMakeFiles/DynamicArrays.dir/depend:
-	cd /home/aru/Documents/Bates/Alg/lab4/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aru/Documents/Bates/Alg/lab4/cpp /home/aru/Documents/Bates/Alg/lab4/cpp /home/aru/Documents/Bates/Alg/lab4/cpp/build /home/aru/Documents/Bates/Alg/lab4/cpp/build /home/aru/Documents/Bates/Alg/lab4/cpp/build/CMakeFiles/DynamicArrays.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aru/Documents/Bates/Alg/lab4/dynamic_array /home/aru/Documents/Bates/Alg/lab4/dynamic_array /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/DynamicArrays.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/DynamicArrays.dir/depend
 
