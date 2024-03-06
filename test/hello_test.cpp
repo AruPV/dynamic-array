@@ -11,10 +11,10 @@ class DynamicArrayTest : public testing::Test {
 			thrice_increased_array.append(2);
 			thrice_increased_array.append(3);
 		}
-		DynamicArray empty_array;
-		DynamicArray once_increased_array;
-		DynamicArray twice_increased_array;
-		DynamicArray thrice_increased_array;
+		DynamicArray<int> empty_array;
+		DynamicArray<int> once_increased_array;
+		DynamicArray<int> twice_increased_array;
+		DynamicArray<int> thrice_increased_array;
 };
 
 TEST_F(DynamicArrayTest, ArrayInstantiation){

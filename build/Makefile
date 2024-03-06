@@ -249,33 +249,6 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/dynamic_array.o: src/dynamic_array.cpp.o
-.PHONY : src/dynamic_array.o
-
-# target to build an object file
-src/dynamic_array.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o
-.PHONY : src/dynamic_array.cpp.o
-
-src/dynamic_array.i: src/dynamic_array.cpp.i
-.PHONY : src/dynamic_array.i
-
-# target to preprocess a source file
-src/dynamic_array.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/src/dynamic_array.cpp.i
-.PHONY : src/dynamic_array.cpp.i
-
-src/dynamic_array.s: src/dynamic_array.cpp.s
-.PHONY : src/dynamic_array.s
-
-# target to generate assembly for a file
-src/dynamic_array.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/src/dynamic_array.cpp.s
-.PHONY : src/dynamic_array.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -343,9 +316,6 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... hello_test"
-	@echo "... src/dynamic_array.o"
-	@echo "... src/dynamic_array.i"
-	@echo "... src/dynamic_array.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

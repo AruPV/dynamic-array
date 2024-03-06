@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o"
-  "CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o.d"
   "CMakeFiles/hello_test.dir/test/hello_test.cpp.o"
   "CMakeFiles/hello_test.dir/test/hello_test.cpp.o.d"
   "bin/hello_test"

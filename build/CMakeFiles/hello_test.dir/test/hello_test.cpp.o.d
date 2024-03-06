@@ -281,4 +281,5 @@ CMakeFiles/hello_test.dir/test/hello_test.cpp.o: \
  /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
  /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
  /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- /home/aru/Documents/Bates/Alg/lab4/dynamic_array/test/../incl/dynamic_array.hpp
+ /home/aru/Documents/Bates/Alg/lab4/dynamic_array/test/../incl/dynamic_array.hpp \
+ /usr/include/c++/13.2.1/ranges /usr/include/c++/13.2.1/span

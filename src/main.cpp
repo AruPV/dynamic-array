@@ -4,13 +4,13 @@
 
 int main(){
 	
-	DynamicArray::toggleLogs();
-	DynamicArray d_a;
+	DynamicArray<int>::toggleLogs();
+	DynamicArray<int> d_a;
 	for (int i = 0; i <12; i++){
 		d_a.append(i);
 	};
 
-	DynamicArray d_b;
+	DynamicArray<int> d_b;
 	d_b.append(1);
 
 

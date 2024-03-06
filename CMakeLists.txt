@@ -26,14 +26,14 @@ enable_testing()
 
 add_executable(
 	DynamicArrays
-	src/dynamic_array.cpp
+	incl/dynamic_array.hpp
 	src/main.cpp
 )
 
 
 add_executable(
 	hello_test
-	src/dynamic_array.cpp
+	incl/dynamic_array.hpp
 	./test/hello_test.cpp
 )
 
