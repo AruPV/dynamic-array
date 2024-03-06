@@ -19,6 +19,7 @@
 
 #include <cstddef>					// For size_t
 #include <array>
+#include <ios>
 #include <string>
 #include <map>
 #include <functional>
@@ -46,7 +47,7 @@ class DynamicArray{
 		void resize(){		
 			// Allocate new memory in heap
 			T* new_array = new T[resize_operation(capacity)];
-			for (T i : std::views::iota(0, int(capacity))){
+			for (int i : std::views::iota(0, int(capacity))){
 				new_array[i] = array[i];
 			}
 			delete[] array; 	// ptr is now dangling
@@ -92,7 +93,7 @@ class DynamicArray{
 			return (capacity);
 		}
 
-		void append(int new_value){
+		void append(T new_value){
 			if (capacity == 0 ){
 				capacity = 1;
 			} else if (capacity <= next_i){
@@ -118,7 +119,7 @@ class DynamicArray{
 			}
 			std::string return_str = "[ ";
 			// Range object implemented in c++20.
-			for (T i : std::views::iota(0, (next_i))){
+			for (int i : std::views::iota(0, (next_i))){
 				return_str.append(std::to_string(array[i]) + " | ");
 				copies += 1;
 			}
@@ -158,4 +159,22 @@ int DynamicArray<T>::add(int capacity){
 
 template<typename T>
 void DynamicArray<T>::resetStats(){
+}
+
+// Template specialization for toString, given that it to_string does not take 
+// std::string
+template<>
+inline std::string DynamicArray<std::string>::toString(){
+	if (next_i == 0){
+		return "[]";
+	}
+	std::string return_str = "[ ";
+	// Range object implemented in c++20.
+	for (int i : std::views::iota(0, (next_i))){
+		return_str.append(array[i] + " | ");
+		copies += 1;
+	}
+	return_str.resize(return_str.size() - 2);
+	return_str += "]";
+	return return_str;
 }

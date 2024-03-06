@@ -185,17 +185,17 @@ DynamicArrays/fast:
 .PHONY : DynamicArrays/fast
 
 #=============================================================================
-# Target rules for targets named hello_test
+# Target rules for targets named int_test
 
 # Build rule for target.
-hello_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_test
-.PHONY : hello_test
+int_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 int_test
+.PHONY : int_test
 
 # fast build rule for target.
-hello_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
+int_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/build
+.PHONY : int_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -273,29 +273,29 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-test/hello_test.o: test/hello_test.cpp.o
-.PHONY : test/hello_test.o
+test/int_test.o: test/int_test.cpp.o
+.PHONY : test/int_test.o
 
 # target to build an object file
-test/hello_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.o
-.PHONY : test/hello_test.cpp.o
+test/int_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/test/int_test.cpp.o
+.PHONY : test/int_test.cpp.o
 
-test/hello_test.i: test/hello_test.cpp.i
-.PHONY : test/hello_test.i
+test/int_test.i: test/int_test.cpp.i
+.PHONY : test/int_test.i
 
 # target to preprocess a source file
-test/hello_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.i
-.PHONY : test/hello_test.cpp.i
+test/int_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/test/int_test.cpp.i
+.PHONY : test/int_test.cpp.i
 
-test/hello_test.s: test/hello_test.cpp.s
-.PHONY : test/hello_test.s
+test/int_test.s: test/int_test.cpp.s
+.PHONY : test/int_test.s
 
 # target to generate assembly for a file
-test/hello_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.s
-.PHONY : test/hello_test.cpp.s
+test/int_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/test/int_test.cpp.s
+.PHONY : test/int_test.cpp.s
 
 # Help Target
 help:
@@ -315,13 +315,13 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... hello_test"
+	@echo "... int_test"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... test/hello_test.o"
-	@echo "... test/hello_test.i"
-	@echo "... test/hello_test.s"
+	@echo "... test/int_test.o"
+	@echo "... test/int_test.i"
+	@echo "... test/int_test.s"
 .PHONY : help
 
 

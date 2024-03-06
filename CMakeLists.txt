@@ -32,13 +32,13 @@ add_executable(
 
 
 add_executable(
-	hello_test
+	int_test
 	incl/dynamic_array.hpp
-	./test/hello_test.cpp
+	./test/int_test.cpp
 )
 
 target_link_libraries(
-	hello_test
+	int_test
 	GTest::gtest_main
 )
 

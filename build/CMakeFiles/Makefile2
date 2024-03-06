@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build
 
 # The main recursive "all" target.
 all: CMakeFiles/DynamicArrays.dir/all
-all: CMakeFiles/hello_test.dir/all
+all: CMakeFiles/int_test.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
 
@@ -74,7 +74,7 @@ preinstall: _deps/googletest-build/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/DynamicArrays.dir/clean
-clean: CMakeFiles/hello_test.dir/clean
+clean: CMakeFiles/int_test.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
 
@@ -156,31 +156,31 @@ CMakeFiles/DynamicArrays.dir/clean:
 .PHONY : CMakeFiles/DynamicArrays.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/hello_test.dir
+# Target rules for target CMakeFiles/int_test.dir
 
 # All Build rule for target.
-CMakeFiles/hello_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/hello_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=11,12 "Built target hello_test"
-.PHONY : CMakeFiles/hello_test.dir/all
+CMakeFiles/int_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/int_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=11,12 "Built target int_test"
+.PHONY : CMakeFiles/int_test.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/hello_test.dir/rule: cmake_check_build_system
+CMakeFiles/int_test.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/hello_test.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/int_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles 0
-.PHONY : CMakeFiles/hello_test.dir/rule
+.PHONY : CMakeFiles/int_test.dir/rule
 
 # Convenience name for target.
-hello_test: CMakeFiles/hello_test.dir/rule
-.PHONY : hello_test
+int_test: CMakeFiles/int_test.dir/rule
+.PHONY : int_test
 
 # clean rule for target.
-CMakeFiles/hello_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/clean
-.PHONY : CMakeFiles/hello_test.dir/clean
+CMakeFiles/int_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/clean
+.PHONY : CMakeFiles/int_test.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
@@ -212,8 +212,8 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/clean:
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
+_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
