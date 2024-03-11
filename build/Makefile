@@ -172,30 +172,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DynamicArrays
+# Target rules for targets named experiments
 
 # Build rule for target.
-DynamicArrays: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DynamicArrays
-.PHONY : DynamicArrays
+experiments: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 experiments
+.PHONY : experiments
 
 # fast build rule for target.
-DynamicArrays/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/build
-.PHONY : DynamicArrays/fast
+experiments/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/build
+.PHONY : experiments/fast
 
 #=============================================================================
-# Target rules for targets named int_test
+# Target rules for targets named tests
 
 # Build rule for target.
-int_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 int_test
-.PHONY : int_test
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-int_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/build
-.PHONY : int_test/fast
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -254,7 +254,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -262,7 +262,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -270,32 +270,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-test/int_test.o: test/int_test.cpp.o
-.PHONY : test/int_test.o
+test/tests.o: test/tests.cpp.o
+.PHONY : test/tests.o
 
 # target to build an object file
-test/int_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/test/int_test.cpp.o
-.PHONY : test/int_test.cpp.o
+test/tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/tests.cpp.o
+.PHONY : test/tests.cpp.o
 
-test/int_test.i: test/int_test.cpp.i
-.PHONY : test/int_test.i
+test/tests.i: test/tests.cpp.i
+.PHONY : test/tests.i
 
 # target to preprocess a source file
-test/int_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/test/int_test.cpp.i
-.PHONY : test/int_test.cpp.i
+test/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/tests.cpp.i
+.PHONY : test/tests.cpp.i
 
-test/int_test.s: test/int_test.cpp.s
-.PHONY : test/int_test.s
+test/tests.s: test/tests.cpp.s
+.PHONY : test/tests.s
 
 # target to generate assembly for a file
-test/int_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/test/int_test.cpp.s
-.PHONY : test/int_test.cpp.s
+test/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/tests.cpp.s
+.PHONY : test/tests.cpp.s
 
 # Help Target
 help:
@@ -310,18 +310,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... DynamicArrays"
+	@echo "... experiments"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... int_test"
+	@echo "... tests"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... test/int_test.o"
-	@echo "... test/int_test.i"
-	@echo "... test/int_test.s"
+	@echo "... test/tests.o"
+	@echo "... test/tests.i"
+	@echo "... test/tests.s"
 .PHONY : help
 
 

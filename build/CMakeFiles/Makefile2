@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/DynamicArrays.dir/all
-all: CMakeFiles/int_test.dir/all
+all: CMakeFiles/experiments.dir/all
+all: CMakeFiles/tests.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
 
@@ -73,8 +73,8 @@ preinstall: _deps/googletest-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/DynamicArrays.dir/clean
-clean: CMakeFiles/int_test.dir/clean
+clean: CMakeFiles/experiments.dir/clean
+clean: CMakeFiles/tests.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
 
@@ -130,57 +130,57 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 .PHONY : _deps/googletest-build/googletest/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/DynamicArrays.dir
+# Target rules for target CMakeFiles/experiments.dir
 
 # All Build rule for target.
-CMakeFiles/DynamicArrays.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=1,2 "Built target DynamicArrays"
-.PHONY : CMakeFiles/DynamicArrays.dir/all
+CMakeFiles/experiments.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=1,2 "Built target experiments"
+.PHONY : CMakeFiles/experiments.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/DynamicArrays.dir/rule: cmake_check_build_system
+CMakeFiles/experiments.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DynamicArrays.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/experiments.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles 0
-.PHONY : CMakeFiles/DynamicArrays.dir/rule
+.PHONY : CMakeFiles/experiments.dir/rule
 
 # Convenience name for target.
-DynamicArrays: CMakeFiles/DynamicArrays.dir/rule
-.PHONY : DynamicArrays
+experiments: CMakeFiles/experiments.dir/rule
+.PHONY : experiments
 
 # clean rule for target.
-CMakeFiles/DynamicArrays.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/clean
-.PHONY : CMakeFiles/DynamicArrays.dir/clean
+CMakeFiles/experiments.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/clean
+.PHONY : CMakeFiles/experiments.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/int_test.dir
+# Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/int_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/int_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=11,12 "Built target int_test"
-.PHONY : CMakeFiles/int_test.dir/all
+CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles --progress-num=11,12 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/int_test.dir/rule: cmake_check_build_system
+CMakeFiles/tests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/int_test.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles 0
-.PHONY : CMakeFiles/int_test.dir/rule
+.PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
-int_test: CMakeFiles/int_test.dir/rule
-.PHONY : int_test
+tests: CMakeFiles/tests.dir/rule
+.PHONY : tests
 
 # clean rule for target.
-CMakeFiles/int_test.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/int_test.dir/build.make CMakeFiles/int_test.dir/clean
-.PHONY : CMakeFiles/int_test.dir/clean
+CMakeFiles/tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
