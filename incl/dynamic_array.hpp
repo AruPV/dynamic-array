@@ -25,9 +25,11 @@
 #include <functional>
 #include <iostream>
 #include <ranges>
+#include <cmath>
 
 template<typename T>
-class DynamicArray{
+class DynamicArray
+{
 
 	private:
 		static int 		resize_count;
@@ -36,31 +38,43 @@ class DynamicArray{
 		static float 	resize_factor;
 		static bool		logs;
 
-		static int 		add(int);
-		static int 		mult(int);
-		static void 	resetStats();
 		
 		T* 		array;			
 		int 	next_i;
 		size_t 	capacity;
 
-		void resize(){		
+		void resize()
+		{		
 			// Allocate new memory in heap
-			T* new_array = new T[resize_operation(capacity)];
+			int new_capacity = resize_operation(capacity);
+			T* new_array = new T[new_capacity];
 			for (int i : std::views::iota(0, int(capacity))){
+				copies += 1;
 				new_array[i] = array[i];
 			}
 			delete[] array; 	// ptr is now dangling
 			array = new_array;  // ptr reassigned to new array location 
-			capacity = resize_operation(capacity);
+			capacity = new_capacity;
 		}
 
 	public:
-		static void toggleLogs(){
+		static void 	resetStats();
+		static int 		add(int);
+		static int 		mult(int);
+		static void toggleLogs()
+		{
 			logs = !logs;
 		}
 
-		std::map<std::string,int> getStatsMap(){
+		static void modifyResize(int (*new_func)(int), float new_factor)
+		{
+			resize_operation = new_func; 
+			resize_factor = new_factor;
+		}
+
+
+		std::map<std::string,int> getStatsMap()
+		{
 			std::map<std::string,int> return_map;
 			return_map["Resizes"] = resize_count;
 			return_map["Copies"] = copies;
@@ -68,7 +82,8 @@ class DynamicArray{
 		}
 
 		DynamicArray(): 
-			capacity {0}{
+			capacity {0}
+		{
 			// Default constructor.
 			array = new T[1];
 			next_i = 0;
@@ -76,27 +91,34 @@ class DynamicArray{
 
 		template<int array_length>
 		DynamicArray(std::array<int, array_length> i_array)
-			: capacity {array_length}{
+			: capacity {array_length}
+		{
 			array = new T[array_length];
 			next_i = 0;
 		}
 
-		~DynamicArray(){
+		~DynamicArray()
+		{
 			delete[] array;
 		}
 
-		int getSize(){
+		int getSize()
+		{
 			return (next_i);
 		}
 
-		int getCapacity(){
+		int getCapacity()
+		{
 			return (capacity);
 		}
 
-		void append(T new_value){
-			if (capacity == 0 ){
+		void append(T new_value)
+		{
+			if (capacity == 0 )
+			{
 				capacity = 1;
-			} else if (capacity <= next_i){
+			} else if (capacity <= next_i)
+			{
 				this->resize();
 				if (logs) {std::cout << "array resized to: " << capacity << "\n";}
 				resize_count += 1;
@@ -106,31 +128,46 @@ class DynamicArray{
 			return;
 		}
 
-		T& operator[](size_t index){
-			if (index >= next_i){
+		T& operator[](size_t index)
+		{
+			if (index >= next_i)
+			{
 				throw std::out_of_range("Index out of bounds");
 			}
 			return array[index];
 		}
 
-		std::string toString(){
-			if (next_i == 0){
+		std::string toString()
+		{
+			if (next_i == 0)
+			{
 				return "[]";
 			}
 			std::string return_str = "[ ";
 			// Range object implemented in c++20.
-			for (int i : std::views::iota(0, (next_i))){
+			for (int i : std::views::iota(0, (next_i)))
+			{
 				return_str.append(std::to_string(array[i]) + " | ");
-				copies += 1;
 			}
 			return_str.resize(return_str.size() - 2);
 			return_str += "]";
 			return return_str;
 		}
 
-		void modifyResize(int (*new_func)(int), float new_factor){
-			resize_operation = new_func; 
-			resize_factor = new_factor;
+		T top()
+		{
+			return array[next_i-1];
+		}
+
+		void push(T element)
+		{
+			this->append(element);	
+		}
+
+		T pop()
+		{
+			T top_element = array[next_i-1]; 
+			next_i = next_i -1;
 		}
 
 };
@@ -149,16 +186,19 @@ bool 	DynamicArray<T>::logs = false;
 
 template<typename T>
 int DynamicArray<T>::mult(int capacity){
-	return (capacity * resize_factor);
+	return (ceil(capacity * resize_factor));
 }
 
 template<typename T>
 int DynamicArray<T>::add(int capacity){
-	return (capacity + resize_factor);
+	return (ceil(capacity + resize_factor));
 }
 
 template<typename T>
 void DynamicArray<T>::resetStats(){
+	DynamicArray<T>::resize_count = 0;
+	DynamicArray<T>::copies = 0;
+
 }
 
 // Template specialization for toString, given that it to_string does not take 
@@ -172,7 +212,6 @@ inline std::string DynamicArray<std::string>::toString(){
 	// Range object implemented in c++20.
 	for (int i : std::views::iota(0, (next_i))){
 		return_str.append(array[i] + " | ");
-		copies += 1;
 	}
 	return_str.resize(return_str.size() - 2);
 	return_str += "]";
