@@ -25,24 +25,24 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin")
 enable_testing()
 
 add_executable(
-	DynamicArrays
-	src/dynamic_array.cpp
+	experiments
+	incl/dynamic_array.hpp
 	src/main.cpp
 )
 
 
 add_executable(
-	hello_test
-	src/dynamic_array.cpp
-	./test/hello_test.cpp
+	tests
+	incl/dynamic_array.hpp
+	./test/tests.cpp
 )
 
 target_link_libraries(
-	hello_test
+	tests
 	GTest::gtest_main
 )
 
 target_include_directories(
-	DynamicArrays
+	experiments
 	PRIVATE incl
 )

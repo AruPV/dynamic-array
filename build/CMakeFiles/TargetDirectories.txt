@@ -1,5 +1,5 @@
-/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/DynamicArrays.dir
-/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/hello_test.dir
+/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/experiments.dir
+/home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/tests.dir
 /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/test.dir
 /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/edit_cache.dir
 /home/aru/Documents/Bates/Alg/lab4/dynamic_array/build/CMakeFiles/rebuild_cache.dir

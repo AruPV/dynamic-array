@@ -172,30 +172,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DynamicArrays
+# Target rules for targets named experiments
 
 # Build rule for target.
-DynamicArrays: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DynamicArrays
-.PHONY : DynamicArrays
+experiments: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 experiments
+.PHONY : experiments
 
 # fast build rule for target.
-DynamicArrays/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/build
-.PHONY : DynamicArrays/fast
+experiments/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/build
+.PHONY : experiments/fast
 
 #=============================================================================
-# Target rules for targets named hello_test
+# Target rules for targets named tests
 
 # Build rule for target.
-hello_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_test
-.PHONY : hello_test
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
 
 # fast build rule for target.
-hello_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/build
-.PHONY : hello_test/fast
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -249,39 +249,12 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/dynamic_array.o: src/dynamic_array.cpp.o
-.PHONY : src/dynamic_array.o
-
-# target to build an object file
-src/dynamic_array.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/src/dynamic_array.cpp.o
-.PHONY : src/dynamic_array.cpp.o
-
-src/dynamic_array.i: src/dynamic_array.cpp.i
-.PHONY : src/dynamic_array.i
-
-# target to preprocess a source file
-src/dynamic_array.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/src/dynamic_array.cpp.i
-.PHONY : src/dynamic_array.cpp.i
-
-src/dynamic_array.s: src/dynamic_array.cpp.s
-.PHONY : src/dynamic_array.s
-
-# target to generate assembly for a file
-src/dynamic_array.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/src/dynamic_array.cpp.s
-.PHONY : src/dynamic_array.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -289,7 +262,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -297,32 +270,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DynamicArrays.dir/build.make CMakeFiles/DynamicArrays.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/experiments.dir/build.make CMakeFiles/experiments.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-test/hello_test.o: test/hello_test.cpp.o
-.PHONY : test/hello_test.o
+test/tests.o: test/tests.cpp.o
+.PHONY : test/tests.o
 
 # target to build an object file
-test/hello_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.o
-.PHONY : test/hello_test.cpp.o
+test/tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/tests.cpp.o
+.PHONY : test/tests.cpp.o
 
-test/hello_test.i: test/hello_test.cpp.i
-.PHONY : test/hello_test.i
+test/tests.i: test/tests.cpp.i
+.PHONY : test/tests.i
 
 # target to preprocess a source file
-test/hello_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.i
-.PHONY : test/hello_test.cpp.i
+test/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/tests.cpp.i
+.PHONY : test/tests.cpp.i
 
-test/hello_test.s: test/hello_test.cpp.s
-.PHONY : test/hello_test.s
+test/tests.s: test/tests.cpp.s
+.PHONY : test/tests.s
 
 # target to generate assembly for a file
-test/hello_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_test.dir/build.make CMakeFiles/hello_test.dir/test/hello_test.cpp.s
-.PHONY : test/hello_test.cpp.s
+test/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/test/tests.cpp.s
+.PHONY : test/tests.cpp.s
 
 # Help Target
 help:
@@ -337,21 +310,18 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... DynamicArrays"
+	@echo "... experiments"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... hello_test"
-	@echo "... src/dynamic_array.o"
-	@echo "... src/dynamic_array.i"
-	@echo "... src/dynamic_array.s"
+	@echo "... tests"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... test/hello_test.o"
-	@echo "... test/hello_test.i"
-	@echo "... test/hello_test.s"
+	@echo "... test/tests.o"
+	@echo "... test/tests.i"
+	@echo "... test/tests.s"
 .PHONY : help
 
 

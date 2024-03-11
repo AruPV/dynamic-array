@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o"
-  "CMakeFiles/DynamicArrays.dir/src/dynamic_array.cpp.o.d"
   "CMakeFiles/DynamicArrays.dir/src/main.cpp.o"
   "CMakeFiles/DynamicArrays.dir/src/main.cpp.o.d"
   "bin/DynamicArrays"
